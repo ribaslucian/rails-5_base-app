@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mystore</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+
+<body>
+	
+	<nav class="blue darken-2">
+		<div class="container">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Logo</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li>
+						<a href="#" class="small-text-3 bold">
+							<i class="material-icons left">&#xE879;</i>
+							Entrar
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<%= flash_toastr %>
+
+	<%= yield %>
+
+</body>
+</html>
