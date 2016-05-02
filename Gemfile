@@ -58,3 +58,6 @@ gem 'toastr-rails', '~> 1.0', '>= 1.0.3'
 
 # view icons
 gem 'material_icons'
+
+# users manager
+gem 'devise', '~> 3.5', '>= 3.5.2'
