@@ -13,28 +13,14 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require materialize-sprockets
-//= require toastr
+//= require_tree .
+//= require toastr_rails
 
-$(document).ready(function() {
+$(window).load(function() {
 
-	toastr.options = {
-		"closeButton": false,
-		"debug": false,
-		"newestOnTop": false,
-		"progressBar": false,
-		"positionClass": "toast-top-center",
-		"preventDuplicates": false,
-		"onclick": null,
-		"showDuration": "300",
-		"hideDuration": "1000",
-		"timeOut": "5000",
-		"extendedTimeOut": "1000",
-		"showEasing": "swing",
-		"hideEasing": "linear",
-		"showMethod": "fadeIn",
-		"hideMethod": "fadeOut"
-	}
+	// menu mobile
+	$(".button-collapse").sideNav(); // Initialize collapse button
+	$('.collapsible').collapsible(); // Initialize collapsible (uncomment the line below if you use the dropdown variation)
 
 });

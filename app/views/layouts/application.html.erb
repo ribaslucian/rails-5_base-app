@@ -8,25 +8,11 @@
 	<%= csrf_meta_tags %>
 </head>
 
-<body>
+<body class="grey lighten-4">
 	
-	<nav class="blue darken-2">
-		<div class="container">
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">Logo</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li>
-						<a href="#" class="small-text-3 bold">
-							<i class="material-icons left">&#xE879;</i>
-							Entrar
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<%= flash_toastr %>
+	<%= render file: 'layouts/menus/visitor' %>
+	<% #render file: 'layouts/flashes/toastr' %>
+	<%= render 'toastr_rails/flash' %>
 
 	<%= yield %>
 
