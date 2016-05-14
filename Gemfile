@@ -53,11 +53,11 @@ gem 'bcrypt', '~> 3.1.8'
 # framework 
 gem 'materialize-sass'
 
-# flash message personalized
-gem 'toastr-rails', '~> 1.0', '>= 1.0.3'
-
 # view icons
 gem 'material_icons'
 
 # users manager
 gem 'devise', '~> 3.5', '>= 3.5.2'
+
+# flash messages
+gem 'toastr_rails'
