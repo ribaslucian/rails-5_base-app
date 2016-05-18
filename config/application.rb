@@ -25,5 +25,8 @@ module Mystore
 
     # definindo {localhost} como ambiente de URL para e-mails
     config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+    # retiramos as divs das labels em formulários que possuem erros em seus campos
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag}
   end
 end

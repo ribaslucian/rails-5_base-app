@@ -1,16 +1,34 @@
-<h2>Forgot your password?</h2>
+<div class="row" style="margin-top: 8%;">
+	<div class="col l4 m8 s12 offset-l4 offset-m2">
+		<h3 class="no margin bold">Esqueceu sua senha ?</h3>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+		<br/>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+		<p class="grey-text small-text-1 justify">
+			Informe seu e-mail no campo abaixo e dentro de alguns instantes você receberá um e-mail com as instruções para criar uma nova senha.
+		</p>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+		<br/>
 
-<%= render "devise/shared/links" %>
+		<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+
+		<div class="input-field">
+			<%= f.label :email, 'Email: *' %>
+			<%= f.email_field :email, autofocus: true %>
+			<%= field_message resource, :email %>
+		</div>
+
+		<br/>
+
+		<div class="table right btn-painel">
+			<p class="center-align small-text-4 grey-text text-right">
+				Verifique sua lixeira ou caixa de span &nbsp; &nbsp; &nbsp;
+			</p>
+
+			<%= f.submit 'Enviar', class: 'btn waves-effect waves-light btn-large right' %>
+			<%= link_to 'Cancelar', new_user_session_path, class: 'btn waves-effect waves-light btn-large grey lighten-2 grey-text text-darken-2' %>
+		</div>
+
+		<% end %>
+	</div>
+</div>

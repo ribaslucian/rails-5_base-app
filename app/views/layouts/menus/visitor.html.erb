@@ -7,9 +7,13 @@
 				M Y S T O R E
 			</li>
 
-			<%= link_to 'CADASTRE-SE', new_user_registration_path, class: 'green-text small-text-5 bold text-darken-1' %>
+			<li>
+				<%= link_to 'CADASTRE-SE', new_user_registration_path, class: 'green-text small-text-5 bold text-darken-1' %>
+			</li>
 
-			<%= link_to 'Esqueci minha senha', new_user_registration_path, class: 'black-text small-text-5 bold' %>
+			<li>
+				<%= link_to 'Esqueci minha senha', new_user_password_path, class: 'grey-text small-text-5 bold' %>
+			</li>
 		</ul>
 
 		<ul class="right hide-on-med-and-down">
@@ -21,7 +25,7 @@
 		<ul id="slide-out" class="side-nav">
 			<%= link_to '<i class="material-icons left">&#xE890;</i> Entrar'.html_safe, new_user_session_path, class: 'blue-text text-darken-2 small-text-3 bold' %>
 
-			<%= link_to 'Esqueci minha senha', new_user_registration_path, class: 'black-text small-text-5 bold' %>
+			<%= link_to 'Esqueci minha senha', new_user_password_path, class: 'black-text small-text-5 bold' %>
 
 			<%= link_to '<i class="material-icons left">&#xE85E;</i> Cadastre-se'.html_safe, new_user_registration_path, class: 'green-text small-text-3 bold text-darken-1' %>
 		</ul>

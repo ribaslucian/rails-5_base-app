@@ -9,10 +9,10 @@
 </head>
 
 <body class="grey lighten-4">
+
+	<%= layouts 'menus/admin' if user_signed_in? %>
 	
-	<%= render file: 'layouts/menus/visitor' %>
-	<% #render file: 'layouts/flashes/toastr' %>
-	<%= render 'toastr_rails/flash' %>
+	<%= layouts 'flashes/toastr' %>
 
 	<%= yield %>
 
