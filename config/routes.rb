@@ -55,9 +55,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root 'home#index'
-
-  get 'home/index'
+  root 'users/sign_in'
 
   devise_for :users
 end
