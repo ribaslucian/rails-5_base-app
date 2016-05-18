@@ -1,0 +1,28 @@
+<nav class="white">
+	<div class="container">
+
+		<% # menu desktop or tablet %>
+		<ul class="left hide-on-med-and-down">
+			<li class="grey-text" style="margin-right: 25px;">
+				M Y S T O R E
+			</li>
+
+			<!-- opções a esquerda -->
+		</ul>
+
+		<ul class="right hide-on-med-and-down">
+			<%= link_to 'Sair', destroy_user_session_path, method: :delete, class: 'red-text text-darken-2 small-text-3 bold' %>
+		</ul>
+
+
+		<% # menu mobile %>
+		<ul id="slide-out" class="side-nav">
+			<!-- opções mobile -->
+		</ul>
+
+		<a href="#" data-activates="slide-out" class="button-collapse blue-text bold text-darken-3">
+			<i class="material-icons left">&#xE5D2;</i>
+			M Y S T O R E
+		</a>
+	</div>
+</nav>

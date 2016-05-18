@@ -1,0 +1,128 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_self
+*
+*= require material_icons
+*= require toastr
+*
+*= require_tree .
+*/
+
+/* initializers */
+@import "materialize/components/prefixer";
+@import "materialize/components/mixins";
+@import "materialize/components/color";
+@import "materialize/components/variables";
+@import "materialize/components/normalize";
+@import "materialize/components/global";
+@import "materialize/components/icons-material-design";
+@import "materialize/components/grid";
+@import "materialize/components/navbar";
+@import "materialize/components/roboto";
+@import "materialize/components/typography";
+@import "materialize/components/cards";
+@import "materialize/components/tabs";
+@import "materialize/components/tooltip";
+@import "materialize/components/buttons";
+@import "materialize/components/dropdown";
+@import "materialize/components/waves";
+@import "materialize/components/modal";
+@import "materialize/components/collapsible";
+@import "materialize/components/chips";
+@import "materialize/components/materialbox";
+@import "materialize/components/forms/forms";
+@import "materialize/components/table_of_contents";
+@import "materialize/components/sideNav";
+@import "materialize/components/preloader";
+@import "materialize/components/slider";
+@import "materialize/components/carousel";
+@import "materialize/components/date_picker/default.scss";
+@import "materialize/components/date_picker/default.date.scss";
+@import "materialize/components/date_picker/default.time.scss";
+
+/* application default font */
+@font-face { font-family: 'Varela Round'; font-style: normal; font-weight: 400; src: local('Varela Round'), local('VarelaRound-Regular'), url('font/varela_round.woff2') format('woff2');}
+*:not(.material-icons) { font-family: 'Varela Round', sans-serif !important; }
+
+html { font-size: 85% !important; }
+
+/* font sizes */
+.small-text-1  { font-size: 95% !important; }
+.small-text-2  { font-size: 90% !important; }
+.small-text-3  { font-size: 85% !important; }
+.small-text-4  { font-size: 80% !important; }
+.small-text-5  { font-size: 75% !important; }
+.small-text-6  { font-size: 70% !important; }
+.small-text-7  { font-size: 65% !important; }
+.small-text-8  { font-size: 60% !important; }
+.small-text-9  { font-size: 55% !important; }
+.small-text-10 { font-size: 50% !important; }
+.small-text-11 { font-size: 45% !important; }
+.small-text-12 { font-size: 40% !important; }
+.small-text-13 { font-size: 35% !important; }
+.small-text-14 { font-size: 30% !important; }
+
+.large-text-1 { font-size: 105% !important; }
+.large-text-2 { font-size: 110% !important; }
+.large-text-3 { font-size: 115% !important; }
+.large-text-4 { font-size: 120% !important; }
+.large-text-5 { font-size: 125% !important; }
+.large-text-6 { font-size: 130% !important; }
+.large-text-7 { font-size: 135% !important; }
+.large-text-8 { font-size: 140% !important; }
+.large-text-9 { font-size: 145% !important; }
+.large-text-10 { font-size: 150% !important; }
+.large-text-11 { font-size: 155% !important; }
+.large-text-12 { font-size: 160% !important; }
+.large-text-13 { font-size: 165% !important; }
+.large-text-14 { font-size: 170% !important; }
+.large-text-15 { font-size: 175% !important; }
+.large-text-16 { font-size: 180% !important; }
+.large-text-17 { font-size: 185% !important; }
+.large-text-18 { font-size: 190% !important; }
+.large-text-19 { font-size: 195% !important; }
+.large-text-20 { font-size: 200% !important; }
+
+/* basics */
+.bold { font-weight: bold; }
+.i { font-style: italic; }
+.relative { position: relative; }
+.table { display: table; }
+.centered { display: table !important; margin: 0 auto; }
+.no.margin { margin: 0px !important; }
+.no.padding { padding: 0px !important; }
+.justify { text-align: justify; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.block-container { padding: 20px 30px; background: white; border-radius: 5px; }
+
+/* forms */
+.form-footer { white-space: nowrap; }
+input:focus { font-size: 120% !important; }
+.input-message { position: relative; top: -6px; }
+
+/* adaptação dos botões, labels */
+.btn, label { font-weight: bold; }
+.btn-painel { white-space: nowrap; }
+
+/* adaptação dos icon */
+.input-field .material-icons { color: #777; }
+.material-icons.inline { bottom: -5px; font-size: 150%; position: relative; margin-right: 2px; }
+
+/* adaptação das mensagens toastr */
+.toast { margin-top: 3% !important; }
+
+/* correções para o menu desktop */
+nav ul.left { position: relative; top: -1px; }
+nav ul .material-icons { position: relative; bottom: -4px; margin-right: 12px; }

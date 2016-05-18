@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :guinea
 
   def guinea
-  	# flash[:notice] = 'olá'
+	# flash[:info] = 'olá'
   end
 
 end

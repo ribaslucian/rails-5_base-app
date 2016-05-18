@@ -13,14 +13,23 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require materialize-sprockets
+//
+// require materialize/initial
+// require materialize/sideNav
+// require materialize/hammer.min
+// require materialize/jquery.hammer
+// require materialize/collapsible
+//= require materialize-sprockets 
+//= require toastr
+//
 //= require_tree .
-//= require toastr_rails
 
-$(window).load(function() {
+$(document).ready(function() {
 
-	// menu mobile
+	// inicializando materializecss.sideNav
 	$(".button-collapse").sideNav(); // Initialize collapse button
-	$('.collapsible').collapsible(); // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-
+	$('.collapsible').collapsible(); // Initialize collapsible (uncomment the line below if you use the dropdown variation)		
+	
+	// configurando estética das mensagens toastr	
+	toastr.options = {"closeButton": true, "debug": false, "newestOnTop": false, "progressBar": true, "positionClass": "toast-top-center", "preventDuplicates": false, "onclick": null, "showDuration": "300", "hideDuration": "1000", "timeOut": "5000", "extendedTimeOut": "1000", "showEasing": "swing", "hideEasing": "linear", "showMethod": "fadeIn", "hideMethod": "fadeOut"}
 });

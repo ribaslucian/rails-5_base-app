@@ -1,18 +1,14 @@
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="row" style="margin-top: 8%;">
+  <div class="col l4 m8 s12 offset-l4 offset-m2">
+    <h3 class="bold">Conecte-se</h3>
 
-<br/>
-<br/>
-
-<div class="row">
-  <div class="col l4 m8 s12 offset-l4 offset-l2">
-
-    <h4>Conecte-se</h4>
-
-    <p class="grey-text center-align">
-      Para acessar o sistema, preencha os campos abaixo:
+    <p class="grey-text small-text-1">
+      Para acessar o sistema basta você se identificar preenchendo os campos abaixo.
     </p>
 
     <br/>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
     <div class="input-field">
       <i class="material-icons prefix">&#xE0BE;</i>
@@ -27,25 +23,18 @@
     </div>
 
     <br/>
-    <br/>
 
-    <div class="row">
-      <div class="left">
-        <% if devise_mapping.rememberable? -%>
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me, 'Lembrar-me', class: 'small-text-3' %>
-        <% end -%>
-      </div>
+    <div class="table right btn-painel">
+      <p class="small-text-4 text-right">
+        <a href="<%= url_for new_user_password_path %>" class="bold grey-text">
+          Esqueceu sua senha ? &nbsp; &nbsp; &nbsp;
+        </a>
+      </p>
 
-      <div class="right">
-        <button type="submit" class="btn waves-effect waves-light btn-large">
-          Entrar
-        </button>
-      </div>
+      <%= f.submit 'Entrar', class: 'btn waves-effect waves-light btn-large right' %>
+      <%= link_to 'Cadastre-se', new_user_registration_path, class: 'btn waves-effect waves-light btn-large right green' %>
     </div>
+
+    <% end %>
   </div>
 </div>
-
-<% end %>
-
-<%= render "devise/shared/links" %>

@@ -49,15 +49,15 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'coffee-script-source', '1.8.0'
 gem 'bcrypt', '~> 3.1.8'
 
+# users manager
+gem 'devise', '~> 3.5', '>= 3.5.2'
+
 ## fron end
 # framework 
 gem 'materialize-sass'
 
 # view icons
 gem 'material_icons'
-
-# users manager
-gem 'devise', '~> 3.5', '>= 3.5.2'
 
 # flash messages
 gem 'toastr_rails'

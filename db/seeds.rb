@@ -7,4 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # usuário padrão
-User.create(:email=>"nome@email.com", :password => "12345678", :password_confirmation => "12345678")
+User.create(email: 'nome@email.com', password: '12345678', password_confirmation: '12345678')
